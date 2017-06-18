@@ -13,6 +13,11 @@ from commontools import log
 def index():
 	return render_template('index.html')
 
+
+@app.route('/hello/<username>')
+def hello(username):
+	return render_template('hello.html', username=username)
+
 #-----------------------------------
 @app.errorhandler(500)
 def internal_error(error):
