@@ -4,13 +4,13 @@
 ############################################################
 
 # Set the base image to Ubuntu
-FROM ubuntu
+FROM ubuntu:16.04
 
 # File Author / Maintainer
 MAINTAINER Mravec
 
 # Update the repository sources list
-RUN apt-get update
+RUN apt-get update -y
 
 ################## BEGIN INSTALLATION ######################
 
