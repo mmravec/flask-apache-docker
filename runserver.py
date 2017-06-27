@@ -8,7 +8,7 @@ def runserver():
 	app.run(host=DEFAULT_HOST, port=port, debug=DEBUG)
 
 
-api.add_resource(HelloWorld, '/')
+api.add_resource(HelloWorld, '/HelloWorld/')
 
 if __name__ == '__main__':
     runserver()
