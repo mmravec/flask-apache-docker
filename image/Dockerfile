@@ -7,7 +7,7 @@
 FROM ubuntu
 
 # File Author / Maintainer
-MAINTAINER Muneeb Ali (@muneeb)
+MAINTAINER Mravec
 
 # Update the repository sources list
 RUN apt-get update
