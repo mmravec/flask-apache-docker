@@ -1,5 +1,5 @@
 import os
-from apache_flask import app
+from apache_flask import app, api, HelloWorld
 from config import DEFAULT_HOST, DEFAULT_PORT, DEBUG
 
 
@@ -8,7 +8,7 @@ def runserver():
 	app.run(host=DEFAULT_HOST, port=port, debug=DEBUG)
 
 
-app.api.add_resource(app.HelloWorld, '/')
+api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
     runserver()
