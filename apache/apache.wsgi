@@ -7,6 +7,4 @@ parent_dir = os.path.abspath(current_dir + "/../")
 
 sys.path.insert(0, parent_dir)
 
-from apache_flask import app as application
-from apache_flask import api
-from apache_flask import HelloWorld
+from apache_flask import app, api, HelloWorld as application
